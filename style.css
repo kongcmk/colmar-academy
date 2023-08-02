@@ -11,6 +11,24 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* font-family: 'Hind Siliguri', sans-serif; */
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #4a4a4a;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 /* Section: Navigation bar  */
@@ -20,23 +38,34 @@ html {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 0 24px;
 }
 
 a {
     text-decoration: none;
+    color: #4b4b4b;
+
+}
+
+.navbar a span {
+    color: a6a6a6;
+    font-weight: 400;
 }
 
 .logo-nav {
     height: 32px;
     display: flex;
     align-items: center;
-    margin-left: 24px;
+    /* margin-left: 24px; */
     color: black;
 }
 
 .logo-image {
     height: 32px;
 }
+
 
 .nav-list {
     display: flex;
@@ -47,6 +76,14 @@ a {
 
 .nav-list li {
     margin-left: 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #808080;
+}
+
+.nav-list li:hover {
+    color: darkblue;
+    font-style: italic;
 }
 
 /* Section 1 */
@@ -78,22 +115,40 @@ a {
     justify-content: center;
     padding: 32px 0;
 }
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4a4a4a;
+}
+
 .hero .aside {
     padding: 16px;
 }
 
+.aside p {
+    color: #4a4a4a;
+    font-weight: bolder;
+}
 .aside button {
     width: 80%;
     padding: 8px;
+    border: 0;
+    background-color: #4a4a4a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
+.aside button:hover {
+    scale: 1.1;
+}
 /* Section 2 */
 
 .information {
     height: fit-content;
     display: flex;
     justify-content: start;
-
 }
 
 .banner h2 {
@@ -111,11 +166,18 @@ a {
 }
 
 .infor-list {
-    padding-top: 16px;
+    width: 100%;
+    padding: 16px 0 16px 16px;
+    /* padding-top: 16px;
     padding-left: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 16px; */
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.infor-list:hover {
+    background-color: #d8d8d8;
 }
 
 .infor-list img {
@@ -127,19 +189,29 @@ a {
     padding: 16px;
 }
 
+.infor-list h3, .infor-list p {
+    margin-bottom: 8px;
+}
+
+.infor-list p {
+    font-weight: normal;
+    font-size: 0.85rem;
+}
 
 /* Section 3 */
 
 .course {
     width: 100%;
-    text-align: center;
-    padding: 0 72px;
-    background-color: blanchedalmond;
+    /* text-align: center; */
+    /* padding: 0px 72px; */
+    background-color: #d8d8d8;
 }
 
 .course h2 {
     padding: 32px 0;
     width: 100%;
+    text-align: center;
+    background-color: #d8d8d8;
 }
 
 .course-cards {
@@ -147,31 +219,55 @@ a {
     /* flex-direction: row; */
     grid-template-columns: auto auto auto;
     justify-content: space-between;
-    gap: 0 32px ;
-
+    gap: 0 32px;
+    padding: 0px 72px;
+    background-color: #d8d8d8;
 }
+
 
 .card {
-    background-color: aqua;
+    background-color: #fff;
     margin-bottom: 32px;
+    /* padding: 16px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
+.card:hover {
+    scale: 1.05;
+} 
+.course-image {
+    width: 100%;
+}
 
 .card img {
     width: 100%;
+    /* aspect-ratio: 16/9; */
+    /* object-fit: contain; */
     /* margin-bottom: 16px; */
 }
 
 .card div {
-    padding: 16px 16px 24px 16px;
+    /* padding: 16px 16px 24px 16px; */
     text-align: left;
 }
 
+.card .card-content {
+    padding: 16px 16px 24px 16px;
+}
+.card-content h3 {
+    font-size: 1rem;
+}
 .card p{
     margin-top: 8px;
 }
 
 /* Section 4 */
+
+.thesis {
+    width: 100%;
+}
 
 .thesis h2 {
     text-align: center;
@@ -190,19 +286,28 @@ a {
 
 .thesis-content .banner p {
     margin: 8px 0 0 0;
+    font-weight: normal;
 }
 
 .thesis .aside{
+    /* width: fit-content; */
     display: flex;
     flex-direction: column;
     justify-content: start;
+    /* margin: 16px; */
 }
 
 .thesis-list {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin: 16px;
+    /* margin: 16px; */
+    padding: 16px;
+}
+
+.thesis-list:hover {
+background-color: #d8d8d8;
 }
 
 .thesis-list div {
@@ -210,6 +315,11 @@ a {
     flex-direction: column;
     justify-content:  center;
     margin-left: 16px;
+
+}
+.thesis-list div p {
+    font-weight: normal;
+    font-size: 0.85rem;
 }
 
 .thesis-list img{
@@ -225,3 +335,13 @@ footer {
     justify-content: space-between;
     padding: 16px 24px;
 }
+
+footer div a{
+    margin-left: 16px;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 425px) {
+
+
+  }
