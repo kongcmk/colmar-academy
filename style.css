@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 1440px;
+    height: 100vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Section: Navigation bar  */
+.navbar {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-nav {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    color: black;
+}
+
+.logo-image {
+    height: 32px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-right: 24px;
+}
+
+.nav-list li {
+    margin-left: 16px;
+}
+
+/* Section 1 */
+
+.hero {
+    /* width: 100%; */
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    background-color: #d8d8d8;
+    /* padding: 32px 24px; */
+}
+
+.banner {
+    width: 60%;
+    /* margin: 32px 24px; */
+    padding: 32px 24px;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.aside {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 32px 0;
+}
+.hero .aside {
+    padding: 16px;
+}
+
+.aside button {
+    width: 80%;
+    padding: 8px;
+}
+
+/* Section 2 */
+
+.information {
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+
+}
+
+.banner h2 {
+    margin: 32px 0 0 0;
+}
+
+.banner p {
+    margin: 24px 0 0 0;
+
+} 
+
+.information .aside {
+    justify-content: start;
+    /* margin-top: 16px; */
+}
+
+.infor-list {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.infor-list img {
+    width: 35%;
+}
+
+.infor-list div {
+    width: 65%;
+    padding: 16px;
+}
+
+
+/* Section 3 */
+
+.course {
+    width: 100%;
+    text-align: center;
+    padding: 0 72px;
+    background-color: blanchedalmond;
+}
+
+.course h2 {
+    padding: 32px 0;
+    width: 100%;
+}
+
+.course-cards {
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    gap: 0 32px ;
+
+}
+
+.card {
+    background-color: aqua;
+    margin-bottom: 32px;
+}
+
+
+.card img {
+    width: 100%;
+    /* margin-bottom: 16px; */
+}
+
+.card div {
+    padding: 16px 16px 24px 16px;
+    text-align: left;
+}
+
+.card p{
+    margin-top: 8px;
+}
+
+/* Section 4 */
+
+.thesis h2 {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.thesis-content {
+    display: flex;
+    justify-content: start;
+}
+
+.banner-video {
+    width: 100%;
+    margin-bottom: 24px;
+} 
+
+.thesis-content .banner p {
+    margin: 8px 0 0 0;
+}
+
+.thesis .aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.thesis-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 16px;
+}
+
+.thesis-list div {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    margin-left: 16px;
+}
+
+.thesis-list img{
+    width: 35%;
+} 
+
+.thesis-list h3 {
+    margin-bottom: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
